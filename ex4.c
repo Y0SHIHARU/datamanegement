@@ -6,9 +6,14 @@ int main(void){
 
   srand(time(NULL));
 
+  char a[1000];
   int j = 0 , k = 0;
   
+  printf("Who are you?\n>");
+  scanf("%s",a);
+  printf("Hello, %s!\n",a);
   printf("Tossing a coin ...\n");
+  
   for(int i = 0 ; i < 3 ; i++){
     int num = rand()%2;
 
